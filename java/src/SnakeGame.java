@@ -36,7 +36,7 @@ public class SnakeGame {
                 exhaustiveChecks++;
                 if (game[r][c]) {
                     snakeLength++;
-                    if (liveCells(r, c) == 1 && (r != headPosition[0] && c != headPosition[1])) { // fix when head is found before //
+                    if (liveCells(r, c) == 1 && (r != headPosition[0] && c != headPosition[1])) { // fix when head is found before all checks //
                         exhaustiveChecks--;
                         tailPosition[0] = r;
                         tailPosition[1] = c;
