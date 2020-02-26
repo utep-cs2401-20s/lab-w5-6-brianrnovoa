@@ -40,9 +40,8 @@ public class SnakeGame {
                         exhaustiveChecks--;
                         tailPosition[0] = r;
                         tailPosition[1] = c;
-                        tailPosition[2] = snakeLength;
-                        return tailPosition;
                     }
+                    tailPosition[2] = snakeLength;
                 }
             }
         }
@@ -76,6 +75,25 @@ public class SnakeGame {
 
         return liveCells;
     }
+
+    /* public int liveCellsRecursive(int r, int c) {
+        if(liveCells(r,c) == 1) {
+
+
+        }
+
+    }
+
+    public int[] findTailRecursive() {
+        return findTailRecursive(headPosition, headPosition);
+    }
+
+    private int[] findTailRecursive(int[] currentPosition, int[] previousPosition) {
+        if(liveCells(currentPosition[0], currentPosition[1]) == 1) {
+            return currentPosition;
+        }
+
+    } */
 
 
 
